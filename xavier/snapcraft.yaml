@@ -1,6 +1,6 @@
-name: jetson-xavier
+name: aura-gadget-agx
 version: '1'
-summary: jetson-xavier gadget
+summary: aura vision jetson-xavier gadget
 base: core18
 description: |
  Bootloader files and partitoning data to create a
@@ -19,7 +19,8 @@ parts:
     source-type: local
     build-packages:
       - wget
-      - gcc-aarch64-linux-gnu
+      - build-essential
+      #- gcc-aarch64-linux-gnu
     override-pull: |
       set -ex
       snapcraftctl pull

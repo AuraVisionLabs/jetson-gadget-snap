@@ -1,5 +1,5 @@
 volumes:
-  jetson:
+  aura-agx-test:
     bootloader: lk
     schema: gpt
     structure:
